@@ -1,0 +1,163 @@
+@import "./reset.css";
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+
+.header {
+    width: 100%;
+    padding: 40px 15px 50px;
+    background: linear-gradient(92.7deg, #4cb8c4 0%, #3cd3ad 100%), #232323;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.18;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 7px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 54px;
+    border-radius: 6px;
+    filter: drop-shadow(10px 10px 3px rgb(154, 154, 154));
+
+}
+
+.input {
+    padding-left: 15px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.input::placeholder {
+    color: #ddddddcb;
+}
+
+.btn {
+    width: 145px;
+    height: 54px;
+    border-radius: 6px;
+    background: #e5464f;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    transition: .5s all;
+}
+
+.btn:hover {
+    background: #3cd3ad;
+    transform: translateX(30px);
+    color: #ffffff;
+}
+
+
+
+/* Card */
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+    width: 360px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: -7px;
+    z-index: -1;
+    height: 100%;
+    width: calc(100% - 20px);
+    background-color: #fff;
+    box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+    border-radius: 10px;
+}
+
+.card-city {
+    font-size: 28px;
+    line-height: 33px;
+    color: #000;
+}
+
+.card-city span {
+    display: inline-block;
+    vertical-align: text-top;
+    background-color: #e5464f;
+    border-radius: 10px;
+    padding: 3px 5px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.card-weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-value {
+    font-size: 92px;
+    line-height: 1;
+    display: flex;
+}
+
+.img {
+    width: 130px;
+}
+.card-description {
+    font-style: 20px;
+    line-height: 1.2;
+    color:  #3cd3ad;
+}
+
+.footer {
+    width: 100%;
+    background: linear-gradient(92.7deg, #4cb8c4 0%, #3cd3ad 100%), #232323;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #2e7695;
+    padding: 5px 15px;
+    margin-top: auto;
+}
+
+.footer a {
+    font-size: 28px;
+    line-height: 1;
+    color: #fafafa;
+    text-decoration: none;
+}
