@@ -1,7 +1,8 @@
 @import "./reset.css";
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
-html, body {
+html,
+body {
     min-height: 100vh;
 }
 
@@ -12,7 +13,6 @@ body {
     align-items: center;
     row-gap: 50px;
 }
-
 
 .header {
     width: 100%;
@@ -41,7 +41,6 @@ body {
     height: 54px;
     border-radius: 6px;
     filter: drop-shadow(10px 10px 3px rgb(154, 154, 154));
-
 }
 
 .input {
@@ -64,7 +63,7 @@ body {
     font-size: 20px;
     font-weight: 500;
     line-height: 1;
-    transition: .5s all;
+    transition: 0.5s all;
 }
 
 .btn:hover {
@@ -73,10 +72,7 @@ body {
     color: #ffffff;
 }
 
-
-
 /* Card */
-
 
 .card {
     position: relative;
@@ -91,7 +87,7 @@ body {
 }
 
 .card::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 30px;
     bottom: -7px;
@@ -137,10 +133,11 @@ body {
 .img {
     width: 130px;
 }
+
 .card-description {
     font-style: 20px;
     line-height: 1.2;
-    color:  #3cd3ad;
+    color: #3cd3ad;
 }
 
 .footer {
