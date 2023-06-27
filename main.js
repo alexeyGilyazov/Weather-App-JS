@@ -33,6 +33,8 @@ function showCard({name, country, temp, icon, condition}) {
 }
 
 async function getWeather(city) {
+    // const url =`http://api.weatherapi.com/v1/forecast.json?key=${apiKEy}&q=07112&days=7`
+    // const url =`http://api.weatherapi.com/v1/search.json?key=${apiKEy}&q=${city}`
     const url = `http://api.weatherapi.com/v1/current.json?key=${apiKEy}&q=${city}`
     const response = await fetch(url)
     const data = await response.json()
