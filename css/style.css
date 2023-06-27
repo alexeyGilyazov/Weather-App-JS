@@ -78,12 +78,12 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 10px;
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
-    width: 360px;
+    min-width: 360px;
 }
 
 .card::before {
@@ -125,13 +125,13 @@ body {
 }
 
 .card-value {
-    font-size: 92px;
+    font-size: 60px;
     line-height: 1;
     display: flex;
 }
 
 .img {
-    width: 130px;
+    max-width: 150px;
 }
 
 .card-description {

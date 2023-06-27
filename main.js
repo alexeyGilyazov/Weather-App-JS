@@ -1,3 +1,5 @@
+import conditions from "./conditionsJSON/conditions.js"
+
 //Api key
 const apiKEy = '5116484e52fb4e03b45150510232606'
 
@@ -17,7 +19,6 @@ function showError(errorMessage) {
     const html = `<div class="card">${errorMessage}</div>`
     header.insertAdjacentHTML('afterend', html)
 }
-
 
 function showCard({name, country, temp, icon, condition}) {
     const html = `
@@ -55,14 +56,18 @@ form.onsubmit = async function (e) {
         removeCard()
         showError(data.error.message)
     } else {
+
         removeCard()
+
+
+        const info = conditions.find((obj) =>  obj.code === data.current.condition.code)
 
         const weatherData = {
             name: data.location.name,
             country: data.location.country,
             temp: data.current.temp_c,
             icon: data.current.condition.icon,
-            condition : data.current.condition.text,
+            condition : data.current.isDay ?  info.languages[23]['day_text'] : info.languages[23]['night_text']
         }
 
         showCard(weatherData)
